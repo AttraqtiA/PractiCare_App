@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #004b23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practicare.Controller.Patient_Feature.AccountPat">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="257.0" spacing="70.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="back_to_signuppatient01" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Back_To_SignUpPatient01" text="Back" textAlignment="CENTER" textFill="#454545" translateX="-90.0" translateY="20.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateY="10.0">
+               <image>
+                  <Image url="@../../../imagesrc/patient.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text fill="#285430" strokeType="OUTSIDE" strokeWidth="0.0" text="PractiCare" textAlignment="CENTER" translateY="80.0" wrappingWidth="87.0458984375">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Patient!" textAlignment="CENTER" translateY="-140.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16862745583057404" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.250980406999588" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="345.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" translateX="-75.0" translateY="-40.0">
+               <image>
+                  <Image url="@../../../imagesrc/pet.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Information," translateX="-15.0" translateY="-25.0" wrappingWidth="235.99993896484375">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you have a pet?" translateY="-15.0" wrappingWidth="235.99993896484375">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="have_pet" mnemonicParsing="false" text="Yes, I have" textFill="WHITE" translateX="-55.0" translateY="-4.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="next_to_signuppatient03" mnemonicParsing="false" onAction="#Next_To_SignUpPatient03" text="Next" textAlignment="CENTER" translateX="105.0" translateY="50.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1666666716337204" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03967580199241638" green="0.25" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <RadioButton fx:id="havent_pet" mnemonicParsing="false" prefHeight="16.0" prefWidth="95.0" text="No, I do not" textFill="WHITE" translateX="-48.0" translateY="-23.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </RadioButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</HBox>

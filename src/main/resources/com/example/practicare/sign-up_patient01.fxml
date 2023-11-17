@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #004b23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practicare.Controller.Patient_Feature.AccountPat">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="257.0" spacing="70.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="back_to_signuppatient" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Back_To_SignUpPatient" text="Back" textAlignment="CENTER" textFill="#454545" translateX="-90.0" translateY="20.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" translateY="10.0">
+               <image>
+                  <Image url="@../../../imagesrc/patient.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text fill="#285430" strokeType="OUTSIDE" strokeWidth="0.0" text="PractiCare" textAlignment="CENTER" translateY="80.0" wrappingWidth="87.0458984375">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hi, Patient!" textAlignment="CENTER" translateY="-140.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16862745583057404" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.250980406999588" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="345.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Please complete the following data for your medical record," translateX="-29.0" translateY="-45.0" wrappingWidth="235.99993896484375">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="15.0" prefWidth="345.0" translateX="25.0" translateY="-35.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name   :" wrappingWidth="88.66664123535156">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="fullname_pat" prefHeight="23.0" prefWidth="193.0" translateX="7.0">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="-25.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Address      :" wrappingWidth="90.00001525878906">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="address_pat" prefHeight="23.0" prefWidth="193.0" translateX="5.0">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="-15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Date  :" wrappingWidth="146.00001525878906">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="datebirth_pat" prefHeight="25.0" prefWidth="111.0" translateX="-51.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="-5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender        :" wrappingWidth="93.33338928222656">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="gender_pat" prefHeight="25.0" prefWidth="111.0" translateX="3.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Status          :" wrappingWidth="140.00013732910156">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="status_pat" prefHeight="25.0" prefWidth="111.0" translateX="-43.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your" translateY="3.0" wrappingWidth="38.0000114440918">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="1.0" translateY="2.0">
+                     <image>
+                        <Image url="@../../../imagesrc/phone_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="     : " translateX="19.0" wrappingWidth="31.333324432373047">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="phone_pat" prefHeight="25.0" prefWidth="127.0" translateX="20.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="25.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Relative's" translateY="3.0" wrappingWidth="70.6666374206543">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="2.0">
+                     <image>
+                        <Image url="@../../../imagesrc/phone_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=":" translateX="8.0" translateY="3.0" wrappingWidth="12.66668963432312">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="relativephone_pat" prefHeight="25.0" prefWidth="125.0" translateX="7.0" />
+               </children>
+            </HBox>
+            <Button fx:id="next_to_signuppatient02" mnemonicParsing="false" onAction="#Next_To_SignUpPatient02" text="Next" textAlignment="CENTER" translateX="117.0" translateY="70.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1666666716337204" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03967580199241638" green="0.25" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</HBox>

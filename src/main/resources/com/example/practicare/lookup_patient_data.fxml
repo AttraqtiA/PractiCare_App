@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #004b23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practicare.Controller.Doctor_Feature.DoctorSchedule">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="257.0" spacing="70.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="back_to_patientmanagement" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Back_ToPatientManagement" text="Back" textAlignment="CENTER" textFill="#454545" translateX="-88.0" translateY="100.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="170.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true" translateY="45.0">
+               <image>
+                  <Image url="@../../../imagesrc/doctor01.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text fill="#285430" strokeType="OUTSIDE" strokeWidth="0.0" text="PractiCare" textAlignment="CENTER" translateY="85.0" wrappingWidth="87.0458984375">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Warm Regards," textAlignment="CENTER" translateY="-110.0" wrappingWidth="182.0140380859375">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16862745583057404" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.250980406999588" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dr. Louis Fernando" textAlignment="CENTER" translateY="-185.0" wrappingWidth="182.01405334472656">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="20.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16862745583057404" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.250980406999588" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="345.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the patient's personal data that you want to look up," translateX="-29.0" translateY="-45.0" wrappingWidth="235.99993896484375">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="15.0" prefWidth="345.0" translateX="25.0" translateY="-35.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name   :" wrappingWidth="88.66664123535156">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_fullname_patient" text="Label" textFill="WHITE" translateX="5.0" translateY="2.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="-25.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Address      :" wrappingWidth="90.00001525878906">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_address_patient" text="Label" textFill="WHITE" translateX="3.0" translateY="2.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="-15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Date  :" wrappingWidth="146.00001525878906">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_date_patient" text="Label" textFill="WHITE" translateX="-53.0" translateY="2.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="-5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender        :" wrappingWidth="93.33338928222656">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_gender_patient" text="Label" textFill="WHITE" translateY="2.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Status          :" wrappingWidth="140.00013732910156">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_status_patient" text="Label" textFill="WHITE" translateX="-46.0" translateY="2.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your" translateY="3.0" wrappingWidth="38.0000114440918">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="1.0" translateY="2.0">
+                     <image>
+                        <Image url="@../../../imagesrc/phone_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="     : " translateX="19.0" wrappingWidth="31.333324432373047">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_phone_patient" text="Label" textFill="WHITE" translateX="20.0" translateY="2.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="25.0" translateY="25.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Relative's" translateY="3.0" wrappingWidth="70.6666374206543">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="2.0">
+                     <image>
+                        <Image url="@../../../imagesrc/phone_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=":" translateX="8.0" translateY="3.0" wrappingWidth="12.66668963432312">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_relativephone_patient" text="Label" textFill="WHITE" translateX="6.0" translateY="4.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="done_patientmanagement" mnemonicParsing="false" onAction="#Done_PatientManagement" text="Done" textAlignment="CENTER" translateX="117.0" translateY="70.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1666666716337204" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03967580199241638" green="0.25" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="24.0" translateY="4.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Symptoms       :" wrappingWidth="155.33338928222656">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="look_symptoms_patient" text="Label" textFill="WHITE" translateX="-39.0" translateY="1.0">
+                     <font>
+                        <Font name="Segoe UI" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</HBox>

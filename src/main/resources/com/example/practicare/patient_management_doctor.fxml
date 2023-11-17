@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #004b23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practicare.Controller.Doctor_Feature.DoctorSchedule">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="213.0" spacing="70.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="logout_to_chooserole" contentDisplay="CENTER" mnemonicParsing="false" onAction="#LogOut_To_ChooseRole" text="Log out" textAlignment="CENTER" textFill="#454545" translateX="-60.0" translateY="140.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="170.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true" translateY="105.0">
+               <image>
+                  <Image url="@../../../imagesrc/doctor01.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="edit_doctorpersonaldata" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Edit_DoctorPersonalData" text="Personal Data" textAlignment="CENTER" textFill="#454545" translateY="110.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Text fill="#285430" strokeType="OUTSIDE" strokeWidth="0.0" text="PractiCare" textAlignment="CENTER" translateY="40.0" wrappingWidth="87.0458984375">
+               <font>
+                  <Font name="Segoe UI Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Warm Regards," textAlignment="CENTER" translateY="-142.0" wrappingWidth="182.0140380859375">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16862745583057404" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.250980406999588" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Label fx:id="displayname_doctor" text="Dr. Louis Fernando" textAlignment="CENTER" translateY="-217.0">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16862745583057404" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1568627506494522" green="0.3294117748737335" blue="0.1882352977991104" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="411.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is your Practice Schedule!" translateX="3.0" translateY="-10.0" wrappingWidth="358.6666717529297">
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="20.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date        :" wrappingWidth="146.00001525878906">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="date_practice" prefHeight="25.0" prefWidth="111.0" translateX="-68.0" />
+                  <Button fx:id="find_schedule" mnemonicParsing="false" onAction="#FindSchedule" text="Schedule" textAlignment="CENTER" translateX="-50.0" translateY="-2.0">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="15.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.1666666716337204" green="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.03967580199241638" green="0.25" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="list_schedule_checkup" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#handleRowClicked01" prefHeight="226.0" prefWidth="339.0" translateY="10.0">
+               <columns>
+                  <TableColumn fx:id="start_checkup" minWidth="0.0" prefWidth="67.2000076174736" text="Start" />
+                  <TableColumn fx:id="end_checkup" minWidth="0.0" prefWidth="71.20001983642578" text="End" />
+                  <TableColumn fx:id="duration_checkup" minWidth="0.0" prefWidth="101.5999755859375" text="Duration" />
+                  <TableColumn fx:id="status_checkup" minWidth="0.0" prefWidth="100.80006408691406" text="Status" />
+               </columns>
+            </TableView>
+            <HBox prefHeight="5.0" prefWidth="345.0" translateX="-6.0" translateY="20.0" />
+            <Button fx:id="next_to_lookuppatientdata" mnemonicParsing="false" onAction="#Next_To_LookUpPatientData" text="Next" textAlignment="CENTER" translateX="142.0" translateY="15.0">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1666666716337204" green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03967580199241638" green="0.25" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</HBox>
